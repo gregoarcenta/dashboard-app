@@ -1,11 +1,10 @@
-<!-- component -->
 <div class="min-h-screen bg-gray-50/50">
-  <app-side-menu
+  <gab-side-menu
     [isAuthenticated]="isAuthenticated()"
-    (onSignIn)="onSignIn()"
-    (onSignOut)="onSignOut()"
-  />
-
+    (signIn)="onSignIn()"
+    (signOut)="onSignOut()"
+    [titleColor]="TitleColor.red"
+  ></gab-side-menu>
   <div class="p-4 xl:ml-80">
     <app-navbar />
 
